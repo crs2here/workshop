@@ -83,8 +83,6 @@ export const postQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD.MM.YYYY")
-        category
       }
       timeToRead
     }
