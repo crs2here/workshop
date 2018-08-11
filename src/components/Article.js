@@ -34,7 +34,7 @@ const Excerpt = styled.p`
   margin-bottom: 1rem;
 `;
 
-const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
+const Article = ({ title, date, excerpt, slug }) => {
   const firstChar = title.charAt(0);
 
   return (
@@ -43,10 +43,6 @@ const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
         <Initiale>{firstChar}</Initiale>
         <Link to={slug}>{title}</Link>
       </Title>
-      <Subline>
-        {date} &mdash; {timeToRead} Min Read &mdash; In{' '}
-        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
-      </Subline>
       <Excerpt>{excerpt}</Excerpt>
     </Post>
   );
@@ -59,6 +55,4 @@ Article.propTypes = {
   date: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  timeToRead: PropTypes.number.isRequired,
-  category: PropTypes.string.isRequired,
 };

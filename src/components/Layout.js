@@ -82,10 +82,12 @@ const Layout = ({ children }) => (
           <SEO />
           {children}
           <Footer>
-            &copy; 2018 by John Doe. All rights reserved. <br />
-            <a href="https://github.com/LeKoArts/gatsby-starter-minimal-blog">GitHub Repository</a> <br />
+            &copy; 2018 by Chris Reyes. All rights reserved. <br />
+            <a href="https://www.linkedin.com/in/chrisreyes88/">LinkedIn</a> <br />
+            <a href="https://github.com/crs2here">GitHub Repository</a> <br />
             <span>Last build: {data.site.buildTime}</span>
-          </Footer>;
+          </Footer>
+          ;
         </React.Fragment>
       </ThemeProvider>
     )}
