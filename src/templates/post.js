@@ -49,10 +49,6 @@ const Post = props => {
         </Header>
         <Content>
           <Title>{post.title}</Title>
-          <Subline>
-            {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{' '}
-            <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
-          </Subline>
           <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
           <PrevNext prev={prev} next={next} />
         </Content>
