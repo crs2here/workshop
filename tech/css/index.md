@@ -2,14 +2,17 @@
 title: "CSS"
 ---
 CSS stands for Cascading Style Sheets
-
-CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-
-CSS saves a lot of work. It can control the layout of multiple web pages all at once
+ *  describes how HTML elements are to be displayed on screen, paper, or in other media
+ *  It can control the layout of multiple web pages all at once
 External stylesheets are stored in .CSS files
 
 ***source*** = [CSS Introduction](https://www.w3schools.com/css/css_intro.asp)
 
+CSS can also be directly embedded into an html tag like this
+
+```html
+<h1 style="color:blue;">This is a Blue Heading</h1>
+```
 
 ### CSS learning resources 
 
