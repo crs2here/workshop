@@ -40,6 +40,7 @@ const Article = ({ title, date, excerpt, slug }) => {
   return (
     <Post>
       <Title>
+        <p>https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/#prepping-for-build</p>
         <Initiale>{firstChar}</Initiale>
         <Link to={slug}>{title}</Link>
       </Title>
